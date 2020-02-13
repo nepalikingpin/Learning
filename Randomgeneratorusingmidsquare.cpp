@@ -6,7 +6,7 @@ int main()
 	int n,random,i;
 	printf("\nHow many number do you want to generate?\t");
 	scanf("%d", &n);
-	
+
 	printf("\nRandom numbers are :");
 	
 	for(i=0;i<n;i++){
