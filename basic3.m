@@ -1,4 +1,4 @@
-image = imread('D:\matlab\saugat.JPG');
+image = imread('D:\Matlab Lab/6.jpg');
 image1 = rgb2gray(image);
 subplot(121);
 imshow(image);
