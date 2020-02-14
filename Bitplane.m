@@ -1,5 +1,5 @@
 clc;
-c=imread('D:\Matlab Lab/helloworld.jpg');
+c=imread('D:\Matlab Lab/6.jpg');
 %extracting image information in code
 cd =double(c);
 %extracting all bit one by one
@@ -12,7 +12,7 @@ c6=mod(floor(cd/32),2);
 c7=mod(floor(cd/64),2);
 c8=mod(floor(cd/128),2);
 %combining image
-cc=2*(2*(2*(2*(2*(2*(2*c8+c7)+c6)+c5)+c4)+c3)+c2)+c1;
+cc=2*(2*(2*(2*(2*(2*(2*(2*c8+c7)+c6)+c5)+c4)+c3)+c2)+c1);
 subplot(2,5,1);
 imshow(c);
 title('original image');
