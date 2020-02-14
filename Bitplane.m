@@ -1,0 +1,45 @@
+clc;
+c=imread('D:\Matlab Lab/helloworld.jpg');
+%extracting image information in code
+cd =double(c);
+%extracting all bit one by one
+c1=mod(cd,2);
+c2 = mod(floor(cd/2),2);
+c3 = mod(floor(cd/4),2);
+c4=mod(floor(cd/8),2);
+c5=mod(floor(cd/16),2);
+c6=mod(floor(cd/32),2);
+c7=mod(floor(cd/64),2);
+c8=mod(floor(cd/128),2);
+%combining image
+cc=2*(2*(2*(2*(2*(2*(2*c8+c7)+c6)+c5)+c4)+c3)+c2)+c1;
+subplot(2,5,1);
+imshow(c);
+title('original image');
+subplot(2,5,2);
+imshow(c1);
+title('bit1');
+subplot(2,5,3);
+imshow(c2);
+title('bit2');
+subplot(2,5,4);
+imshow(c3);
+title('bit3');
+subplot(2,5,5);
+imshow(c4);
+title('bit4');
+subplot(2,5,6);
+imshow(c5);
+title('bit5');
+subplot(2,5,7);
+imshow(c6);
+title('bit6');
+subplot(2,5,8);
+imshow(c7);
+title('bit7');
+subplot(2,5,9);
+imshow(c8);
+title('bit8');
+subplot(2,5,10);
+imshow(cc);
+title('combined image');
